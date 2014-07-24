@@ -87,17 +87,18 @@ Same as Semantic UI.
 
 - Components
   - markup / css / script
-  - api documentation
+  - api documentation / information
 
-- themes
-  - has many: asset manifests, framework dependencies
+- Themes
+  - has many asset manifests
+  
+- Pages
+  - uniquely named
+  - has many blocks
 
-- blocks
-  - belongs to: block category. header, footer, etc.
-  - taggable
-
-- components
-   - custom html elements
+- Style Guides
+  - has many pages
+  - has one theme
 
 ### Component / Block Editor View 
 
