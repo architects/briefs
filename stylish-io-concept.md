@@ -11,7 +11,16 @@ A component is made up of markup, javascript, and css.  I intend to be
 able to export the components as standard web components / custom
 elements, or polymer custom elements.
 
+## Marketing Site / Splash Page
+
+I have the stylish.io domain, and intend to make the stylish editor capable of publishing themes / components to the stylish.io site, and potentialy develop a marketplace for them.
+
+
 ## Inspirations
+
+### CustomElements.io
+
+CustomElements.io is a marketplace for HTML Components.  Stylish.io would be a marketplace for collections of HTML Components presented in different styles / themes
 
 ### Atom shell 
 
