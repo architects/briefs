@@ -1,22 +1,58 @@
-# Concept Notes: Stylish 
+# Concept Notes: Stylish.io
 
-Stylish is a tool for creating / cloning / editing component style guides in the context
-of one or more themes.
+Stylish.io is a marketplace for high end, developer friendly UI kits and themes.  
 
-A component style guide is a presentation of multiple components on a single page,
-along with information about them, their API, example code, etc.  The
-component style guide will share a common visual aesthetic or theme.
+The high end, developer friendly part will be made possible by an editor tool that allows front end developers / designers to:
 
-A component is made up of markup, javascript, and css.  I intend to be
-able to export the components as standard web components / custom
-elements, or polymer custom elements.
+- build a suite of third party dependencies / plugins
+- customize a bootstrap or semantic-ui base to develop a theme
+- edit / customize / preview components live in the browser
+- combine components into blocks live in the browser
+- combine blocks into page layouts live in the browser
 
-## Marketing Site / Splash Page
+The actual languages used for the templates and css will be preprocessor friendly:  
 
-I have the stylish.io domain, and intend to make the stylish editor capable of publishing themes / components to the stylish.io site, and potentialy develop a marketplace for them.
-
+- haml / slim / jade
+- less / sass
+- coffeescript
 
 ## Inspirations
+
+### Designmodo Startup Framework
+
+[The startup framework](http://designmodo.com/startup) is a high end UI kit and landing page layout library.  
+
+It is by far the highest quality distribution of bootstrap theme that I have ever worked with.  
+
+Aside from the aesthetic, which may not be everyone's taste, the way the theme and templates themselves are broken up and distributed is really well done in a way which lends a lot of value to the work flows of the types of people who would use it.  
+
+The startup framework is so well thought out as a theme, that the assets are extremely composable, and can be mixed and matched to great effect.  So much so, in fact, that they were able to build an interactive tool for doing so called the [The Generator](http://designmodo.com/generator)
+
+I want the stylish theme editor to be a tool which empowers other people to build and distribute their own UI kits, following the same good structure of the Flat-UI theme, and Startup Framework, and with the same great documentation.
+
+#### Block Structures in the Startup Framework 
+
+The Designmodo startup framework is a collection of 'Blocks'. A Block is
+a root level HTML element nested directly under the body tag, or in some
+cases, a container element which is the only descendant of the body tag.
+
+Blocks can be arbitrarily composed to generate a large number of landing page combinations.
+
+The startup framework divides up their package into categories of blocks:
+
+- headers
+- footers
+- content
+- contacts
+- prices
+- projects
+- crews
+
+When you export something from the generator, it will give you the
+markup for the blocks, as well as the css / less for that block. It will
+wrap all of this up in a general HTML page which includes the global /
+common / shared dependencies.
+
 
 ### CustomElements.io
 
@@ -45,33 +81,6 @@ whoever hand coded flat ui.
 It is based on Bootstrap.  So in a sense, it is a bootstrap theme.
 However unlike many other bootstrap themes, this is more generalized to
 where it has more in common with bootstrap itself.
-
-### Designmodo Startup Framework
-
-The Designmodo startup framework is a collection of 'Blocks'. A Block is
-a root level HTML element nested directly under the body tag, or in some
-cases, a container element which is the only descendant of the body tag.
-
-A block may contain zero or more components. 
-
-The startup framework divides up their package into categories of
-blocks:
-
-- headers
-- footers
-- content
-- contacts
-- prices
-- projects
-- crews
-
-This allows you to mix and match blocks to build page layouts. You can
-use http://designmodo.com/generator to see how this is used.  
-
-When you export something from the generator, it will give you the
-markup for the blocks, as well as the css / less for that block. It will
-wrap all of this up in a general HTML page which includes the global /
-common / shared dependencies.
 
 ### Semantic UI
 
